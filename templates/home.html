@@ -15,6 +15,7 @@
         <form action="" method="post">
             <h2>Welcome to our password generator site!!!</h2>
             {% csrf_token %}
+            <label for="">Your password length:</label>
             <input placeholder="Your password length" type="number" name="password_length" min="4" max="64" value="8" required>
             <button id="btn_generate" type="submit" class="btn">Generate</button>          
         </form>

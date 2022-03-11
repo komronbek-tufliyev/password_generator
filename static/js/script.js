@@ -9,7 +9,7 @@ document.getElementById('btn_copy').addEventListener(
         text.setSelectionRange(0, 99999);
         
         navigator.clipboard.writeText(text.value);
-        alert("Copied password: "+text.value);
+        alert("Copied password: " + text.value);
         console.log('Password copied!');
         // document.getElementById('password').nodeValue=text;
     }
